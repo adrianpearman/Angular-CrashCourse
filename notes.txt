@@ -1,0 +1,36 @@
+Angular 2 Course
+
+#Front End
+HTML, CSS, TypeScript, Angular
+
+#Backend
+Databases
+API - Application Programming Interface
+HTTP Endpoint
+HTTP Request
+Data
+
+Creating a new Angular project using angular cli: 'ng new <project name>'
+to run the application, we use the prompt: 'ng serve'
+
+Installing TypeScript to the computer
+
+HMR - Hot Module Reload: Allows for the application to automatically Reload
+
+Angular Storyline:
+2010 - Angular 1 aka AngularJS
+2016 - Angular 2: entirely different, using typescript instead of the initial set
+2017 - Angular 4 aka Angular: the same as Angular 2 but with core updates to allow for more functionality with newer
+
+
+TypeScript vs JavaScript
+- Strong typing - defining what the variable is (sting, number, boolean, etc)
+- Object orientated features
+- Compile-time errors
+- Tooling options available to the application
+
+Javascript versions:
+ES5 - supported by all browsers
+ES6 - introduction of let and const into standard JavaScript
+ES2016 - more additions added to make JavaScript more useful
+ES2017 - most update version JavaScript

@@ -36,8 +36,11 @@ var newLog = function (message) { return console.log(message); };
 //   draw: () => void
 // }
 var Point = /** @class */ (function () {
-    function Point() {
+    function Point(x, y) {
+        this.x = x;
+        this.y = y;
     }
+    // public -- fully accessible outside of the function. functions by default are set to public
     Point.prototype.draw = function () {
         console.log('X ', this.x);
         console.log('Y ', this.y);
@@ -45,12 +48,26 @@ var Point = /** @class */ (function () {
     Point.prototype.getDistance = function (another) {
         //...
     };
+    // Getter
+    Point.prototype.getX = function () {
+        return this.x;
+    };
+    // Setter
+    Point.prototype.setX = function (value) {
+        if (value < 0) {
+            throw new Error('value cannot be less than 0');
+        }
+        this.x = value;
+    };
     return Point;
 }());
 var drawPoint = function (point) {
     // ...
 };
-var point = new Point();
-point.x = 100;
-point.y = 300;
+// let point = new Point()
+// point.x = 100
+// point.y = 300
+var point = new Point(1, 2);
+var x = point.getX();
+point.setX(100);
 point.draw();
